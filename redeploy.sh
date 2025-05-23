@@ -25,3 +25,6 @@ sudo systemctl stop splitfast.service
 
 echo "Starting containers..."
 sudo systemctl start splitfast.service
+
+echo "Prunning old images..."
+docker image prune -f
